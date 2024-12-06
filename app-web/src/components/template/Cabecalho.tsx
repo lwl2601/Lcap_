@@ -1,16 +1,16 @@
+import FunçãoCabecalho from "./FunçãoCabecalho";
 import Carrinho from './Carrinho'
 import Logo from './Logo'
 
 export default function Cabecalho() {
     return (
-        <header
-            className="
+      <header
+        className="
                 flex justify-between items-center
-                bg-zinc-800 h-20 px-10
+                bg-zinc-0 h50 px-10
             "
-        >
-            <Logo />
-            <Carrinho />
-        </header>
-    )
+      >
+        <FunçãoCabecalho />
+      </header>
+    );
 }

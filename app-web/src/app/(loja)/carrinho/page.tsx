@@ -4,6 +4,7 @@ import CarrinhoVazio from '@/components/carrinho/CarrinhoVazio'
 import TotalCarrinho from '@/components/carrinho/TotalCarrinho'
 import Pagina from '@/components/template/Pagina'
 import useCarrinho from '@/data/hooks/useCarrinho'
+import Zap from '../telefone_numero/zap'
 
 export default function PaginaCarrinho() {
     const { itens, adicionar, remover } = useCarrinho()
@@ -26,6 +27,7 @@ export default function PaginaCarrinho() {
                     <TotalCarrinho itens={itens} />
                 </>
             )}
+            <Zap/>
         </Pagina>
     )
 }
